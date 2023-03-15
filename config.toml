@@ -1,0 +1,41 @@
+baseURL = 'http://deviouscc.org'
+languageCode = 'en-us'
+title = 'Devious Code Contest'
+
+[module]
+  # this is needed when you fetch the theme as a submodule to your repo.
+  # replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-terminal/v3'
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "green"
+  showMenuItems = 2
+  fullWidthTheme = true
+  centerTheme = true
+
+[languages]
+  [languages.en]
+    title = "Devious Code Contest"
+    subtitle = ""
+    keywords = ""
+    copyright = "JABACAT"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+	missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Devious Code Contest"
+      logoHomeLink = "/"
+
+    # [languages.en.menu]
+    #   [[languages.en.menu.main]]
+    #     identifier = "about"
+    #     name = "About"
+    #     url = "/about"
+    #   [[languages.en.menu.main]]
+    #     identifier = "showcase"
+    #     name = "Showcase"
+    #     url = "/showcase"
